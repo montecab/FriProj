@@ -1,0 +1,1622 @@
+{
+   "user_facing_name" : "Lean Machine", 
+   "description" : "Dot loves watching the colorful fireflies over the lagoon. \nHelp Dot match their colors as they fly up, down, and all around!", 
+   "icon_name" : "Lagoon", 
+   "tutorial_mission" : false, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Left Yellow", 
+         "description" : "Make Dot turn on <b>yellow lights</b> when tilted to <b>lean left</b>.  Then make Dot automatically return to <b>Start</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020883070456400", 
+                  "layout_position" : {
+                     "x" : -21.20972, 
+                     "y" : -8.334351
+                  }, 
+                  "id" : "37572785_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -195.5907, 
+                           "y" : -5.57238
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37573841_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37573841_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020904719803010", 
+                  "layout_position" : {
+                     "x" : -59.27075, 
+                     "y" : -12.01794
+                  }, 
+                  "id" : "37573253_4"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Yellow</b> light.  Link <b>Start</b> to the light using a <b>Lean Left</b> cue.  Link the light back to <b>Start</b> using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -195.5907, 
+                           "y" : -5.57238
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37573841_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37573841_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020894761497500", 
+                  "layout_position" : {
+                     "x" : -59.27075, 
+                     "y" : -12.01794
+                  }, 
+                  "id" : "37574345_12"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Right Magenta", 
+         "description" : "Make Dot turn on <b>magenta lights</b> when tilted to <b>lean right</b>.  Then make Dot automatically return to <b>Start</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -181.2805, 
+                           "y" : -3.274536
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574260_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574260_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020894581661130", 
+                  "layout_position" : {
+                     "x" : -21.20972, 
+                     "y" : -8.334351
+                  }, 
+                  "id" : "37574119_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -210.8795, 
+                           "y" : 0.1495361
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 221.4966, 
+                           "y" : 6.426998
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020906042586210", 
+                  "layout_position" : {
+                     "x" : -21.20972, 
+                     "y" : -8.334351
+                  }, 
+                  "id" : "37574208_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Magenta</b> light.  Link <b>Start</b> to the light using a <b>Lean Right</b> cue.  Link the light back to <b>Start</b> using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "06_Video Branching_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -210.8795, 
+                           "y" : 0.1495361
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 221.4966, 
+                           "y" : 6.426998
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020906042586210", 
+                  "layout_position" : {
+                     "x" : -21.20972, 
+                     "y" : -8.334351
+                  }, 
+                  "id" : "37575477_20"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Down Green", 
+         "description" : "Make Dot turn on <b>green lights</b> when tilted <b>face down</b>.  Then make Dot automatically return to <b>Start</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -181.2805, 
+                           "y" : -3.274536
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 187.0333, 
+                           "y" : 3.619385
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020897208603650", 
+                  "layout_position" : {
+                     "x" : -21.20972, 
+                     "y" : -8.334351
+                  }, 
+                  "id" : "37574469_20"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -224.0723, 
+                           "y" : 2.749649
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 236.023, 
+                           "y" : 7.958994
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : -0.1131592, 
+                           "y" : -214.5822
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574697_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574697_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "37574700_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "37574700_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574697_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574705_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574705_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020909678578150", 
+                  "layout_position" : {
+                     "x" : -20.69385, 
+                     "y" : 24.19519
+                  }, 
+                  "id" : "37574526_20"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Green</b> light.  Link <b>Start</b> to the light using a <b>Face Down</b> cue.  Link the light back to <b>Start</b> using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "06_Video Branching_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -224.0723, 
+                           "y" : 2.749649
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 236.023, 
+                           "y" : 7.958994
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : -0.1131592, 
+                           "y" : -214.5822
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574697_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574697_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "37574700_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "37574700_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574697_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574705_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574705_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020906491977200", 
+                  "layout_position" : {
+                     "x" : -20.69385, 
+                     "y" : 24.19519
+                  }, 
+                  "id" : "37575465_28"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Up Cyan", 
+         "description" : "Make Dot turn on <b>cyan lights</b> when tilted <b>face up</b>.  Then make Dot automatically return to <b>Start</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -181.2805, 
+                           "y" : -3.274536
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 187.0333, 
+                           "y" : 3.619385
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 2.188843, 
+                           "y" : -174.8711
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574795_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574795_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "37574798_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "37574798_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574795_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574801_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574801_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020899894988760", 
+                  "layout_position" : {
+                     "x" : -9.07666, 
+                     "y" : 5.721313
+                  }, 
+                  "id" : "37574562_20"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }, 
+                     {
+                        "type" : "COLOR_CYAN", 
+                        "id" : "BEHAVIOR_COLOR_CYAN"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -228.5423, 
+                           "y" : -5.057098
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 228.486, 
+                           "y" : 6.893524
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_CYAN", 
+                        "layout_position" : {
+                           "x" : -4.729378, 
+                           "y" : 227.2061
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574656_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : -2.570925, 
+                           "y" : -230.9288
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574830_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574656_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "37574658_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "37574658_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574656_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574663_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574663_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574830_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "37574833_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_FORWARD----> ( S4 )", 
+                        "id" : "37574833_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574830_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574838_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574838_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020909904001960", 
+                  "layout_position" : {
+                     "x" : -23.46606, 
+                     "y" : 34.13403
+                  }, 
+                  "id" : "37574585_20"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Cyan</b> light.  Link <b>Start</b> to the light using a <b>Face Up</b> cue.  Link the light back to <b>Start</b> using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "06_Video Branching_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_MAGENTA", 
+                        "id" : "BEHAVIOR_COLOR_MAGENTA"
+                     }, 
+                     {
+                        "type" : "COLOR_CYAN", 
+                        "id" : "BEHAVIOR_COLOR_CYAN"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37572785_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : -225.0798, 
+                           "y" : -0.1138802
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37573421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_MAGENTA", 
+                        "layout_position" : {
+                           "x" : 225.0628, 
+                           "y" : 0.1241798
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574229_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_CYAN", 
+                        "layout_position" : {
+                           "x" : -1.549726, 
+                           "y" : 225.7229
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574656_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : -0.6739559, 
+                           "y" : -226.5542
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37574830_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37573421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "37573425_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_LEFT----> ( S1 )", 
+                        "id" : "37573425_1"
+                     }, 
+                     {
+                        "state_source_id" : "37573421_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574220_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574220_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574229_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "37574230_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_RIGHT----> ( S2 )", 
+                        "id" : "37574230_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574229_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574236_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574236_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574656_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "37574658_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "37574658_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574656_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574663_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574663_1"
+                     }, 
+                     {
+                        "state_source_id" : "37572785_2", 
+                        "state_target_id" : "37574830_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "37574833_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_FORWARD----> ( S4 )", 
+                        "id" : "37574833_1"
+                     }, 
+                     {
+                        "state_source_id" : "37574830_1", 
+                        "state_target_id" : "37572785_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37574838_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( noname )", 
+                        "id" : "37574838_1"
+                     }
+                  ], 
+                  "state_start_id" : "37572785_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Glitchy Cup", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020906909470750", 
+                  "layout_position" : {
+                     "x" : -26.14197, 
+                     "y" : -58.0022
+                  }, 
+                  "id" : "37575523_36"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "21341691_2"
+}

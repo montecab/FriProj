@@ -1,0 +1,231 @@
+{
+   "user_facing_name": "Celebrations",
+   "description": "Wow!  Dash is super excited to meet you!  \nLet's help Dash celebrate!",
+   "icon_name": "ui_eli_0",
+   "tutorial_mission": true,
+   "type": 0,
+   "video_start": "",
+   "video_end": "",
+   "introoutro": false,
+   "puzzles": [
+      {
+         "user_facing_name": "Add Celebration",
+         "description": "Make Dash <b>automatically</b> celebrate.",
+         "load_startSM": false,
+         "introduction": "",
+         "show_introduction": false,
+         "transfer_robot_tut": false,
+         "icon_name": "ui_eli_0",
+         "center_program": false,
+         "hints": [
+            {
+               "user_facing_name": "Start",
+               "program": {
+                  "functions": [],
+                  "behaviors": [
+                     {
+                        "type": "START_STATE",
+                        "id": "BEHAVIOR_START_STATE"
+                     }
+                  ],
+                  "states": [
+                     {
+                        "user_facing_name": "noname",
+                        "behavior_id": "BEHAVIOR_START_STATE",
+                        "layout_position": {
+                           "x": 0,
+                           "y": 0
+                        },
+                        "activation_time": 1,
+                        "mood": 0,
+                        "check_state_para": true,
+                        "obscured": false,
+                        "id": "39208268_2"
+                     }
+                  ],
+                  "transitions": [],
+                  "state_start_id": "39208268_2",
+                  "parent_token": "",
+                  "user_facing_name": "Weird Fish",
+                  "version": 3,
+                  "robot_type": 1001,
+                  "loaded_time": "131037270682905000",
+                  "layout_position": {
+                     "x": -171.4996,
+                     "y": -12.53052
+                  },
+                  "id": "39208268_1"
+               },
+               "iq_points": 0,
+               "description": "",
+               "check_state_para": false,
+               "check_trigger_para": false,
+               "file_name": ""
+            },
+            {
+               "user_facing_name": "NewHint",
+               "program": {
+                  "functions": [],
+                  "behaviors": [
+                     {
+                        "type": "START_STATE",
+                        "id": "BEHAVIOR_START_STATE"
+                     },
+                     {
+                        "moody_animation": {
+                           "id": "10015"
+                        },
+                        "type": "MOODY_ANIMATION",
+                        "id": "MOODY_ANIMATION_10015"
+                     }
+                  ],
+                  "states": [
+                     {
+                        "user_facing_name": "noname",
+                        "behavior_id": "BEHAVIOR_START_STATE",
+                        "layout_position": {
+                           "x": 0,
+                           "y": 0
+                        },
+                        "activation_time": 1,
+                        "mood": 0,
+                        "check_state_para": true,
+                        "obscured": false,
+                        "id": "39208268_2"
+                     },
+                     {
+                        "user_facing_name": "S1",
+                        "behavior_id": "MOODY_ANIMATION_10015",
+                        "layout_position": {
+                           "x": 251.4221,
+                           "y": 0.08544159
+                        },
+                        "activation_time": 1,
+                        "mood": 1,
+                        "check_state_para": false,
+                        "obscured": false,
+                        "parameter_value": 10015,
+                        "parameter_values": [
+                           "10015"
+                        ],
+                        "id": "39208370_1"
+                     }
+                  ],
+                  "transitions": [
+                     {
+                        "state_source_id": "39208268_2",
+                        "state_target_id": "39208370_1",
+                        "obscured": true,
+                        "trigger": {
+                           "type": "BEHAVIOR_FINISHED",
+                           "id": "39208374_2"
+                        },
+                        "comment": "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )",
+                        "id": "39208374_1"
+                     }
+                  ],
+                  "state_start_id": "39208268_2",
+                  "parent_token": "",
+                  "user_facing_name": "Weird Fish",
+                  "version": 3,
+                  "robot_type": 1001,
+                  "loaded_time": "131037270682905000",
+                  "layout_position": {
+                     "x": -171.4996,
+                     "y": -12.53052
+                  },
+                  "id": "39208359_4"
+               },
+               "iq_points": 0,
+               "description": "Drag out a <b>Celebrations</b> state.  Link the state with an <b>Auto</b> cue.",
+               "check_state_para": false,
+               "check_trigger_para": false,
+               "file_name": "01_Video Cues_4-3_Master_1.mp4"
+            },
+            {
+               "user_facing_name": "Finish",
+               "program": {
+                  "functions": [],
+                  "behaviors": [
+                     {
+                        "type": "START_STATE",
+                        "id": "BEHAVIOR_START_STATE"
+                     },
+                     {
+                        "moody_animation": {
+                           "id": "10015"
+                        },
+                        "type": "MOODY_ANIMATION",
+                        "id": "MOODY_ANIMATION_10015"
+                     }
+                  ],
+                  "states": [
+                     {
+                        "user_facing_name": "noname",
+                        "behavior_id": "BEHAVIOR_START_STATE",
+                        "layout_position": {
+                           "x": 0,
+                           "y": 0
+                        },
+                        "activation_time": 1,
+                        "mood": 0,
+                        "check_state_para": true,
+                        "obscured": false,
+                        "id": "39208268_2"
+                     },
+                     {
+                        "user_facing_name": "S1",
+                        "behavior_id": "MOODY_ANIMATION_10015",
+                        "layout_position": {
+                           "x": 251.4221,
+                           "y": 0.08544159
+                        },
+                        "activation_time": 1,
+                        "mood": 1,
+                        "check_state_para": false,
+                        "obscured": false,
+                        "parameter_value": 10015,
+                        "parameter_values": [
+                           "10015"
+                        ],
+                        "id": "39208370_1"
+                     }
+                  ],
+                  "transitions": [
+                     {
+                        "state_source_id": "39208268_2",
+                        "state_target_id": "39208370_1",
+                        "obscured": true,
+                        "trigger": {
+                           "type": "BEHAVIOR_FINISHED",
+                           "id": "39208374_2"
+                        },
+                        "comment": "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )",
+                        "id": "39208374_1"
+                     }
+                  ],
+                  "state_start_id": "39208268_2",
+                  "parent_token": "",
+                  "user_facing_name": "Weird Fish",
+                  "version": 3,
+                  "robot_type": 1001,
+                  "loaded_time": "131037270682905000",
+                  "layout_position": {
+                     "x": -171.4996,
+                     "y": -12.53052
+                  },
+                  "id": "39208507_9"
+               },
+               "iq_points": 0,
+               "description": "",
+               "check_state_para": false,
+               "check_trigger_para": false,
+               "file_name": ""
+            }
+         ],
+         "iq_points": 10,
+         "behaviors": []
+      }
+   ],
+   "id": "20487397_2"
+}

@@ -1,0 +1,1407 @@
+{
+   "user_facing_name" : "Blizzard Beacon", 
+   "description" : "Dot went searching for the Yeti and got lost in a blizzard!  \nHelp Dot signal for help!", 
+   "icon_name" : "Arctic Snow", 
+   "tutorial_mission" : false, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Red Light", 
+         "description" : "Make Dot automatically turn on <b>red lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38132494_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "38132533_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38132528_4"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Red</b> light.  Link the states with an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "38132533_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38132580_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Blink", 
+         "description" : "After turning on red lights, make Dot <b>wait for 1.0 s</b> then turn the <b>lights off</b>.  Then make Dot <b>wait for 1.0 s</b> and turn on <b>red lights</b> again.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "38132533_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38132586_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38132911_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Lights Off</b> state.  Link the light states together with two <b>Wait For</b> cues set to 1.0s.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "03_Video Loops_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38133034_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Change Rate", 
+         "description" : "Make Dot always <b>wait for 0.2 s</b> before changing the color of the lights.", 
+         "load_startSM" : false, 
+         "introduction" : "If we make the blink rate faster, maybe Dot will be rescued faster.  \nLet's try it!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_1", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38133043_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38133105_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Change both of the <b>Wait For</b> cues to wait for <b>0.2 s</b>.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -197.3663, 
+                     "y" : -8.883667
+                  }, 
+                  "id" : "38133169_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add Sound", 
+         "description" : "Make Dot use the <b>listener</b> to play an FX sound every 2.0 s.  After the sound, make Dot instantly turn on <b>red lights</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "Let's add a sound to make sure Dot is found!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_3", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_SFX", 
+                        "id" : "BEHAVIOR_SOUND_SFX"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : 32.46204, 
+                           "y" : -151.6439
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38133337_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_SFX", 
+                        "layout_position" : {
+                           "x" : 191.8249, 
+                           "y" : -153.063
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2240, 
+                        "parameter_values" : [
+                           "2240"
+                        ], 
+                        "id" : "38133350_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "state_omni_id" : "38133337_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -200.2594, 
+                     "y" : 50.72327
+                  }, 
+                  "id" : "38133175_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_SFX", 
+                        "id" : "BEHAVIOR_SOUND_SFX"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : 35.58655, 
+                           "y" : -141.8676
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38133337_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_SFX", 
+                        "layout_position" : {
+                           "x" : 199.7925, 
+                           "y" : -150.9252
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2240, 
+                        "parameter_values" : [
+                           "2240"
+                        ], 
+                        "id" : "38133350_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }, 
+                     {
+                        "state_source_id" : "38133337_1", 
+                        "state_target_id" : "38133350_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 2, 
+                           "type" : "TIME", 
+                           "id" : "38133445_2"
+                        }, 
+                        "comment" : "( S3 ) ----TIME----> ( S4 )", 
+                        "id" : "38133445_1"
+                     }, 
+                     {
+                        "state_source_id" : "38133350_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38133449_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S1 )", 
+                        "id" : "38133449_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "state_omni_id" : "38133337_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -202.5757, 
+                     "y" : 51.30005
+                  }, 
+                  "id" : "38133434_21"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Choose a signal sound.  Link the <b>Listener</b> to the sound using a <b>Wait For</b> cue set to <b>2.0 s</b>.  Link the sound to the <b>Red</b> light using an <b>Instant</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "12_Video Listener _4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_SFX", 
+                        "id" : "BEHAVIOR_SOUND_SFX"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132494_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 193.5822, 
+                           "y" : 3.677376
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132533_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 392.5856, 
+                           "y" : 7.96204
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38132917_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : 35.58655, 
+                           "y" : -141.8676
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38133337_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_SFX", 
+                        "layout_position" : {
+                           "x" : 199.7925, 
+                           "y" : -150.9252
+                        }, 
+                        "activation_time" : 3, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2240, 
+                        "parameter_values" : [
+                           "2240"
+                        ], 
+                        "id" : "38133350_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38132494_2", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38132533_9"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38132533_8"
+                     }, 
+                     {
+                        "state_source_id" : "38132533_1", 
+                        "state_target_id" : "38132917_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133013_2"
+                        }, 
+                        "comment" : "( S1 ) ----TIME----> ( S2 )", 
+                        "id" : "38133013_1"
+                     }, 
+                     {
+                        "state_source_id" : "38132917_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "parameter_value" : 0.2, 
+                           "type" : "TIME", 
+                           "id" : "38133017_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S1 )", 
+                        "id" : "38133017_1"
+                     }, 
+                     {
+                        "state_source_id" : "38133337_1", 
+                        "state_target_id" : "38133350_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 2, 
+                           "type" : "TIME", 
+                           "id" : "38133445_2"
+                        }, 
+                        "comment" : "( S3 ) ----TIME----> ( S4 )", 
+                        "id" : "38133445_1"
+                     }, 
+                     {
+                        "state_source_id" : "38133350_1", 
+                        "state_target_id" : "38132533_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38133449_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S1 )", 
+                        "id" : "38133449_1"
+                     }
+                  ], 
+                  "state_start_id" : "38132494_2", 
+                  "state_omni_id" : "38133337_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Curious House", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026512944649870", 
+                  "layout_position" : {
+                     "x" : -202.5757, 
+                     "y" : 51.30005
+                  }, 
+                  "id" : "38134923_27"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "21676842_2"
+}

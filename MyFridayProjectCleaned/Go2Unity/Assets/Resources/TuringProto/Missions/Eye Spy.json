@@ -1,0 +1,1192 @@
+{
+   "user_facing_name" : "Eye Spy", 
+   "description" : "Dot found a sunken ship at Firefly Lagoon!  \nHelp Dot pretend to be a lighthouse to keep other ships from crashing.", 
+   "icon_name" : "Lagoon", 
+   "tutorial_mission" : false, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Add Links", 
+         "description" : "Make Dot automatically say \"<b>I spy with my glowing eye</b>.\"  Then make Dot instantly <b>turn off all eye lights</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 201.0773, 
+                           "y" : -2.520439
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37486135_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 382.2235, 
+                           "y" : -2.752381
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37486140_1"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020013249349250", 
+                  "layout_position" : {
+                     "x" : -217.3889, 
+                     "y" : -9.295959
+                  }, 
+                  "id" : "37485730_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020026741004480", 
+                  "layout_position" : {
+                     "x" : -217.3889, 
+                     "y" : -9.295959
+                  }, 
+                  "id" : "37485851_4"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link <b>Start</b> to the sound using an <b>Auto</b> cue.   Link the sound to the <b>Eye Ring</b> using an <b>Instant</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020011077612170", 
+                  "layout_position" : {
+                     "x" : -217.3889, 
+                     "y" : -9.295959
+                  }, 
+                  "id" : "37486148_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add Eye Ring", 
+         "description" : "Make Dot <b>turn on all eye lights</b> when the <b>top button is pressed</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "The <b>eye ring</b> lets you control each light of Dot's eye.  You can use it to make Dot blink, smile or show patterns!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020016518362020", 
+                  "layout_position" : {
+                     "x" : -281.2529, 
+                     "y" : -14.67621
+                  }, 
+                  "id" : "37486165_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485922_1", 
+                        "state_target_id" : "37486457_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37486482_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "37486482_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020042964223580", 
+                  "layout_position" : {
+                     "x" : -281.2529, 
+                     "y" : -14.67621
+                  }, 
+                  "id" : "37486478_15"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the <b>Eye Ring</b> states with a <b>Top Button Pressed</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485922_1", 
+                        "state_target_id" : "37486457_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37486482_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "37486482_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020016801966720", 
+                  "layout_position" : {
+                     "x" : -281.2529, 
+                     "y" : -14.67621
+                  }, 
+                  "id" : "37486604_18"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add Loop", 
+         "description" : "Make Dot <b>turn off the eye lights</b> when the <b>top button is pressed</b> again.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 198.2147, 
+                           "y" : -3.735054
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 370.7092, 
+                           "y" : -3.591611
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485922_1", 
+                        "state_target_id" : "37486457_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37486482_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "37486482_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020040629887690", 
+                  "layout_position" : {
+                     "x" : -281.2529, 
+                     "y" : -14.67621
+                  }, 
+                  "id" : "37486617_18"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 150.7117, 
+                           "y" : 4.895645
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 302.9181, 
+                           "y" : -0.5151253
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485922_1", 
+                        "state_target_id" : "37486457_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37486482_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "37486482_1"
+                     }, 
+                     {
+                        "state_source_id" : "37486457_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37488874_2"
+                        }, 
+                        "comment" : "( S3 ) ----BUTTON_MAIN----> ( S2 )", 
+                        "id" : "37488874_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131020043269076680", 
+                  "layout_position" : {
+                     "x" : -231.7051, 
+                     "y" : 8.29834
+                  }, 
+                  "id" : "37486754_18"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Make a loop!  Link the <b>Eye Ring</b> states with another <b>Top Button Pressed</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37485730_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 150.7117, 
+                           "y" : 4.895645
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2093, 
+                        "parameter_values" : [
+                           "2093"
+                        ], 
+                        "id" : "37485914_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 302.9181, 
+                           "y" : -0.5151253
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 0, 
+                        "parameter_values" : [
+                           "0"
+                        ], 
+                        "id" : "37485922_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 552.8014, 
+                           "y" : -3.304749
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 4095, 
+                        "parameter_values" : [
+                           "4095"
+                        ], 
+                        "id" : "37486457_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37485730_2", 
+                        "state_target_id" : "37485914_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37485926_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37485926_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485914_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "37485929_2"
+                        }, 
+                        "comment" : "( S1 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "37485929_1"
+                     }, 
+                     {
+                        "state_source_id" : "37485922_1", 
+                        "state_target_id" : "37486457_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37486482_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "37486482_1"
+                     }, 
+                     {
+                        "state_source_id" : "37486457_1", 
+                        "state_target_id" : "37485922_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "37488874_2"
+                        }, 
+                        "comment" : "( S3 ) ----BUTTON_MAIN----> ( S2 )", 
+                        "id" : "37488874_1"
+                     }
+                  ], 
+                  "state_start_id" : "37485730_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Magical Castle", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131021635866417920", 
+                  "layout_position" : {
+                     "x" : -231.7051, 
+                     "y" : 8.29834
+                  }, 
+                  "id" : "37488970_21"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "37485551_2"
+}

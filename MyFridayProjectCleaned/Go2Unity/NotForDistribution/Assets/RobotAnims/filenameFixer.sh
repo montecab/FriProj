@@ -1,0 +1,39 @@
+#dash
+
+mv Behaviors/dash_brave_spark_behavior_greetingStrut.anim Behaviors/dash_brave_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_brave_spark_behavior_lookLeftOkay.anim Behaviors/dash_brave_spark_behavior_lookLeft.anim 2>/dev/null
+mv Behaviors/dash_brave_spark_behavior_lookRightOkay.anim Behaviors/dash_brave_spark_behavior_lookRight.anim 2>/dev/null
+mv Behaviors/dash_cautious_spark_behavior_danceLeft.anim Behaviors/dash_cautious_spark_behavior_dance_left.anim 2>/dev/null
+mv Behaviors/dash_cautious_spark_behavior_danceRight.anim Behaviors/dash_cautious_spark_behavior_dance_right.anim 2>/dev/null
+mv Behaviors/dash_cautious_spark_behavior_greetingGrowl.anim Behaviors/dash_cautious_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_cautious_spark_behavior_lookLeftWhatThe.anim Behaviors/dash_cautious_spark_behavior_lookLeft.anim 2>/dev/null
+mv Behaviors/dash_cautious_spark_behavior_lookRightWhatThe.anim Behaviors/dash_cautious_spark_behavior_lookRight.anim 2>/dev/null
+mv Behaviors/dash_curious_spark_behavior_danceLeft.anim Behaviors/dash_curious_spark_behavior_dance_left.anim 2>/dev/null
+mv Behaviors/dash_curious_spark_behavior_danceRight.anim Behaviors/dash_curious_spark_behavior_dance_right.anim 2>/dev/null
+mv Behaviors/dash_curious_spark_behavior_greetingWhoa.anim Behaviors/dash_curious_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_curious_spark_behavior_push.anim Behaviors/dash_curious_spark_behavior_pushing.anim 2>/dev/null
+mv Behaviors/dash_frustrated_spark_behavior_greetingForgetIt.anim Behaviors/dash_frustrated_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_happy_spark_behavior_danceLeft.anim Behaviors/dash_happy_spark_behavior_dance_left.anim 2>/dev/null
+mv Behaviors/dash_happy_spark_behavior_danceRight.anim Behaviors/dash_happy_spark_behavior_dance_right.anim 2>/dev/null
+mv Behaviors/dash_happy_spark_behavior_greetingHi.anim Behaviors/dash_happy_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_happy_spark_behavior_lookAroundWhistle.anim Behaviors/dash_happy_spark_behavior_lookAround.anim 2>/dev/null
+
+mv Behaviors/dash_happy_spark_behavior_takeOffBlastOff.anim Behaviors/dash_happy_spark_behavior_takeOff.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_danceLeft.anim Behaviors/dash_silly_spark_behavior_dance_left.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_goodbye.anim Behaviors/dash_silly_spark_behavior_bye.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_greetingHellos.anim Behaviors/dash_silly_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_lookLeftBoing.anim Behaviors/dash_silly_spark_behavior_lookLeft.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_lookRightBoing.anim Behaviors/dash_silly_spark_behavior_lookRight.anim 2>/dev/null
+mv Behaviors/dash_silly_spark_behavior_takeOffCharge.anim Behaviors/dash_silly_spark_behavior_takeOff.anim 2>/dev/null
+
+mv Behaviors/dash_suprised_spark_behavior_greetingHey.anim Behaviors/dash_suprised_spark_behavior_greeting.anim 2>/dev/null
+mv Behaviors/dash_suprised_spark_behavior_lookLeftWhoa.anim Behaviors/dash_suprised_spark_behavior_lookLeft.anim 2>/dev/null
+mv Behaviors/dash_suprised_spark_behavior_lookRightWhoa.anim Behaviors/dash_suprised_spark_behavior_lookRight.anim 2>/dev/null
+
+mv Behaviors/dash_silly_spark_behavior_burp.anim Behaviors/dash_silly_spark_behavior_burping.anim 2>/dev/null
+
+#dot
+
+mv Behaviors/dot_happy_spark_behavior_laughingGiggle.anim Behaviors/dot_happy_spark_behavior_laughing.anim 2>/dev/null
+mv Behaviors/dot_frustrated_spark_behavior_dizzy.anim Behaviors/dot_frustrated_spark_behavior_getDizzy.anim 2>/dev/null
+

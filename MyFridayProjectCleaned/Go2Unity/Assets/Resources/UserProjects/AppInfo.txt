@@ -1,0 +1,145 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_MAIN",
+                    "name": "m 0",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_MAIN",
+                    "name": "m 1",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_1",
+                    "name": "1 0",
+                    "type": "ButtonTrigger"       
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_1",                    
+                    "name": "1 1",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_2",
+                    "name": "2 0",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_2",
+                    "name": "2 1",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_3",
+                    "name": "3 0",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_3",
+                    "name": "3 1",
+                    "type": "ButtonTrigger"
+                }
+            ],
+            "name": "buttons",
+            "type": "Workbench"
+        },
+        {
+        "children": [
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"NEAR",
+                    "name": "BN",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"MIDDLE",
+                    "name": "BM",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"FAR",
+                    "name": "BF",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "DistancePairValue":"CN",
+                    "name": "CN",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"CM",
+                    "name": "CM",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"CF",
+                    "name": "CF",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"LN",
+                    "name": "LN",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"LM",
+                    "name": "LM",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"RN",
+                    "name": "RN",
+                    "type": "DistancePairTrigger"
+                },
+                {
+                    "DistancePairValue":"RM",
+                    "name": "RM",
+                    "type": "DistancePairTrigger"
+                }
+            ],
+            "name": "distance",
+            "type": "Workbench"
+        },
+        {
+        "children": [
+                {
+                    "KidnapState":"KIDNAPPED",
+                    "name": "taken",
+                    "type": "KidnapTrigger"
+                },
+                {
+                    "KidnapState":"FREE",
+                    "name": "free",
+                    "type": "KidnapTrigger"
+                }
+            ],
+            "name": "kidnap",
+            "type": "Workbench"
+        },
+        {
+        "children": [
+                 {
+                    "name": "clap",
+                    "type": "ClapTrigger"
+                }
+            ],
+            "name": "clap",
+            "type": "Workbench"
+        }
+    ],
+    "name": "myProject",
+    "type": "Project"
+}

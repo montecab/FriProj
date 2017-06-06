@@ -1,0 +1,140 @@
+{ 
+   "functions" : [ 
+   ], 
+   "behaviors" : [ 
+      { 
+         "type" : "START_STATE", 
+         "id" : "BEHAVIOR_START_STATE"
+      }, 
+      { 
+         "type" : "OMNI", 
+         "id" : "BEHAVIOR_OMNI"
+      }, 
+      { 
+         "type" : "COLOR_WHITE", 
+         "id" : "BEHAVIOR_COLOR_WHITE"
+      }, 
+      { 
+         "type" : "COLOR_ORANGE", 
+         "id" : "BEHAVIOR_COLOR_ORANGE"
+      }, 
+      { 
+         "type" : "COLOR_RED", 
+         "id" : "BEHAVIOR_COLOR_RED"
+      }
+   ], 
+   "states" : [ 
+      { 
+         "user_facing_name" : "noname", 
+         "behavior_id" : "BEHAVIOR_START_STATE", 
+         "layout_position" : { 
+            "x" : -66.73144, 
+            "y" : -89.24467
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "27819536_2"
+      }, 
+      { 
+         "user_facing_name" : "S1", 
+         "behavior_id" : "BEHAVIOR_OMNI", 
+         "layout_position" : { 
+            "x" : 114.2863, 
+            "y" : -88.44963
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39217420_1"
+      }, 
+      { 
+         "user_facing_name" : "S2", 
+         "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+         "layout_position" : { 
+            "x" : -137.9648, 
+            "y" : 89.99999
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39217534_1"
+      }, 
+      { 
+         "user_facing_name" : "S4", 
+         "behavior_id" : "BEHAVIOR_COLOR_ORANGE", 
+         "layout_position" : { 
+            "x" : 108.5758, 
+            "y" : 90.10332
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39218367_1"
+      }, 
+      { 
+         "user_facing_name" : "S5", 
+         "behavior_id" : "BEHAVIOR_COLOR_RED", 
+         "layout_position" : { 
+            "x" : 229.5443, 
+            "y" : 88.38954
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39218369_1"
+      }
+   ], 
+   "transitions" : [ 
+      { 
+         "state_source_id" : "27819536_2", 
+         "state_target_id" : "39217534_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "RANDOM", 
+            "id" : "39218377_2"
+         }, 
+         "comment" : "( noname ) ----RANDOM----> ( S2 )", 
+         "id" : "39218377_1"
+      }, 
+      { 
+         "state_source_id" : "39217420_1", 
+         "state_target_id" : "39218367_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "RANDOM", 
+            "id" : "39218389_2"
+         }, 
+         "comment" : "( S1 ) ----RANDOM----> ( S4 )", 
+         "id" : "39218389_1"
+      }, 
+      { 
+         "state_source_id" : "39217420_1", 
+         "state_target_id" : "39218369_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "RANDOM", 
+            "id" : "39218420_2"
+         }, 
+         "comment" : "( S1 ) ----RANDOM----> ( S5 )", 
+         "id" : "39218420_1"
+      }
+   ], 
+   "state_start_id" : "27819536_2", 
+   "state_omni_id" : "39217420_1", 
+   "parent_token" : "", 
+   "user_facing_name" : "Level Triggers", 
+   "version" : 3, 
+   "robot_type" : 1001, 
+   "loaded_time" : "131037371662175230", 
+   "layout_position" : { 
+      "x" : -286.1167, 
+      "y" : 32.81787
+   }, 
+   "id" : "27819536_1"
+}

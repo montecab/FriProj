@@ -1,0 +1,3687 @@
+{
+   "user_facing_name" : "Whirly Bird", 
+   "description" : "Dot really wants to get a bird's eye view of the city, but flapping wings like a duck is hard work!  \nTransform Dot into a helicopter!", 
+   "icon_name" : "City", 
+   "tutorial_mission" : false, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Face Up", 
+         "description" : "Make Dot turn the <b>lights off</b> when tilted <b>face up</b>.  Then make Dot automatically show <b>two eye lights</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 184.0369, 
+                           "y" : 4.632557
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 352.8174, 
+                           "y" : 7.324207
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -163.7726, 
+                     "y" : 9.259033
+                  }, 
+                  "id" : "38432413_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -163.7726, 
+                     "y" : 9.259033
+                  }, 
+                  "id" : "38432533_8"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link <b>Start</b> to the <b>Lights Off</b> state using a <b>Face Up</b> cue.  Link the light to the <b>Eye Ring</b> using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -163.7726, 
+                     "y" : 9.259033
+                  }, 
+                  "id" : "38432625_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Whirly Blades", 
+         "description" : "Make Dot automatically show a looping pattern of two eye lights that rotate clockwise.", 
+         "load_startSM" : true, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 651.1486, 
+                           "y" : -150.085
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 490.1488, 
+                           "y" : -165.4388
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 314.2377, 
+                           "y" : -166.7299
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -303.1436, 
+                     "y" : 43.55939
+                  }, 
+                  "id" : "38432634_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -304.1987, 
+                     "y" : 33.49097
+                  }, 
+                  "id" : "38432766_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "03_Video Loops_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -304.1987, 
+                     "y" : 33.49097
+                  }, 
+                  "id" : "38433070_37"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Helicopter Sound", 
+         "description" : "Make Dot use a <b>listener</b> to play the <b>helicopter</b> sound whenever the <b>top button is pressed</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_3", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -116.8724, 
+                     "y" : 16.46222
+                  }, 
+                  "id" : "38433076_37"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -26.5907, 
+                     "y" : 80.78314
+                  }, 
+                  "id" : "38433250_44"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the <b>Listener</b> to the <b>Helicopter</b> sound using a <b>Top Button Pressed</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "12_Video Listener _4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -83.30615, 
+                     "y" : 83.91962
+                  }, 
+                  "id" : "38433310_44"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Blinking Light", 
+         "description" : "After the helicopter sound, make Dot instantly turn on <b>red lights</b> then automatically turn the <b>lights off</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "It can be dangerous to fly in the city at night. \nLet's make sure we can be seen by adding a blinking light!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_3", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S10", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 152.6665, 
+                           "y" : -148.803
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433593_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -83.30615, 
+                     "y" : 83.91962
+                  }, 
+                  "id" : "38433439_44"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S10", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 152.6665, 
+                           "y" : -148.803
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433593_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433204_1", 
+                        "state_target_id" : "38433593_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38433667_2"
+                        }, 
+                        "comment" : "( S9 ) ----IMMEDIATE----> ( S10 )", 
+                        "id" : "38433667_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433593_1", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38433670_2"
+                        }, 
+                        "comment" : "( S10 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38433670_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -296.7988, 
+                     "y" : 61.31274
+                  }, 
+                  "id" : "38433596_46"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the <b>Helicopter</b> sound to the <b>Red</b> light using an <b>Instant</b> cue.  Link the <b>Red</b> light to the <b>Lights Off</b> state using an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S10", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 152.6665, 
+                           "y" : -148.803
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433593_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433204_1", 
+                        "state_target_id" : "38433593_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38433667_2"
+                        }, 
+                        "comment" : "( S9 ) ----IMMEDIATE----> ( S10 )", 
+                        "id" : "38433667_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433593_1", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38433670_2"
+                        }, 
+                        "comment" : "( S10 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38433670_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -188.9567, 
+                     "y" : 54.12708
+                  }, 
+                  "id" : "38433694_52"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Test Flight", 
+         "description" : "<b>PLAY WITH DOT:</b>  \nHelp Dot fly through the city safely.  Hold Dot <b>face up</b> then press the <b>top button</b> to blink the light <b>three</b> times.", 
+         "load_startSM" : false, 
+         "introduction" : "It's time for a test flight!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S10", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 152.6665, 
+                           "y" : -148.803
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433593_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433204_1", 
+                        "state_target_id" : "38433593_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38433667_2"
+                        }, 
+                        "comment" : "( S9 ) ----IMMEDIATE----> ( S10 )", 
+                        "id" : "38433667_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433593_1", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38433670_2"
+                        }, 
+                        "comment" : "( S10 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38433670_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -296.7988, 
+                     "y" : 61.31274
+                  }, 
+                  "id" : "38433821_52"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_OFF", 
+                        "id" : "BEHAVIOR_COLOR_OFF"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "OMNI", 
+                        "id" : "BEHAVIOR_OMNI"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432413_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_OFF", 
+                        "layout_position" : {
+                           "x" : 155.2887, 
+                           "y" : 4.400636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38432522_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.2446, 
+                           "y" : 12.70447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 65, 
+                        "parameter_values" : [
+                           "65"
+                        ], 
+                        "id" : "38432525_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 479.6489, 
+                           "y" : 14.87166
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 130, 
+                        "parameter_values" : [
+                           "130"
+                        ], 
+                        "id" : "38432682_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 648.225, 
+                           "y" : 23.92926
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 260, 
+                        "parameter_values" : [
+                           "260"
+                        ], 
+                        "id" : "38432691_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 650.7778, 
+                           "y" : -129.199
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 520, 
+                        "parameter_values" : [
+                           "520"
+                        ], 
+                        "id" : "38432699_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 476.2722, 
+                           "y" : -135.9434
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 1040, 
+                        "parameter_values" : [
+                           "1040"
+                        ], 
+                        "id" : "38432704_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S7", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 313.8302, 
+                           "y" : -141.5555
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2080, 
+                        "parameter_values" : [
+                           "2080"
+                        ], 
+                        "id" : "38432709_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S8", 
+                        "behavior_id" : "BEHAVIOR_OMNI", 
+                        "layout_position" : {
+                           "x" : -160.1814, 
+                           "y" : -164.9255
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433188_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S9", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : -4.85611, 
+                           "y" : -154.7801
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2258, 
+                        "parameter_values" : [
+                           "2258"
+                        ], 
+                        "id" : "38433204_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S10", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 152.6665, 
+                           "y" : -148.803
+                        }, 
+                        "activation_time" : 3, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38433593_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38432413_2", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38432536_2"
+                        }, 
+                        "comment" : "( noname ) ----LEAN_BACKWARD----> ( S1 )", 
+                        "id" : "38432536_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432522_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432544_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432544_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432525_1", 
+                        "state_target_id" : "38432682_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432770_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38432770_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432682_1", 
+                        "state_target_id" : "38432691_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432773_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38432773_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432691_1", 
+                        "state_target_id" : "38432699_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432776_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "38432776_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432699_1", 
+                        "state_target_id" : "38432704_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432778_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "38432778_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432704_1", 
+                        "state_target_id" : "38432709_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432780_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S7 )", 
+                        "id" : "38432780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38432709_1", 
+                        "state_target_id" : "38432525_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38432783_2"
+                        }, 
+                        "comment" : "( S7 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38432783_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433188_1", 
+                        "state_target_id" : "38433204_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "38433210_2"
+                        }, 
+                        "comment" : "( S8 ) ----BUTTON_MAIN----> ( S9 )", 
+                        "id" : "38433210_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433204_1", 
+                        "state_target_id" : "38433593_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "38433667_2"
+                        }, 
+                        "comment" : "( S9 ) ----IMMEDIATE----> ( S10 )", 
+                        "id" : "38433667_1"
+                     }, 
+                     {
+                        "state_source_id" : "38433593_1", 
+                        "state_target_id" : "38432522_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38433670_2"
+                        }, 
+                        "comment" : "( S10 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38433670_1"
+                     }
+                  ], 
+                  "state_start_id" : "38432413_2", 
+                  "state_omni_id" : "38433188_1", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Bumpy Kiwi", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131029512133491970", 
+                  "layout_position" : {
+                     "x" : -137.6558, 
+                     "y" : 83.88049
+                  }, 
+                  "id" : "38433972_52"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 50, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "21553713_2"
+}

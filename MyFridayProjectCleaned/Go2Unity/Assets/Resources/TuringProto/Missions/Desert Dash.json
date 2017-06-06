@@ -1,0 +1,1623 @@
+{
+   "user_facing_name" : "Desert Dash", 
+   "description" : "As much fun as it is to trudge through the endless desert, you are relieved to come across an oasis of desert racers. Why not try a little desert racing yourself?", 
+   "icon_name" : "Desert", 
+   "tutorial_mission" : false, 
+   "type" : 0, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "1", 
+         "description" : "Make Dash turn on <b>red lights</b> when the <b>top button is pressed</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Red means stop, but Dash is ready to let loose!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971933334648640", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923808_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -67.02302, 
+                           "y" : 10.98236
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971933382857160", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "22186803_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the state with a <b>Top Button Pressed</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -52.37833, 
+                           "y" : 22.71234
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971933431888920", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923764_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "type" : "COLOR_RED", 
+               "id" : "BEHAVIOR_COLOR_RED"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "2", 
+         "description" : "After turning on red lights, make Dash automatically <b>take off</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Look at Dash go!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -52.91941, 
+                           "y" : 13.21396
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971934788143060", 
+                  "layout_position" : {
+                     "x" : 45.62683, 
+                     "y" : 0.5432129
+                  }, 
+                  "id" : "21923764_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 105.9435, 
+                           "y" : 3.786636
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -60.82163, 
+                           "y" : 4.493134
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "22283053_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "22283053_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971934966580990", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "22283065_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the state with an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 116.6119, 
+                           "y" : 7.150879
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -61.49448, 
+                           "y" : 8.571335
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "22283053_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "22283053_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971935082835570", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923712_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "moody_animation" : {
+                  "id" : "10016"
+               }, 
+               "type" : "MOODY_ANIMATION", 
+               "id" : "MOODY_ANIMATION_10016"
+            }, 
+            {
+               "type" : "COLOR_RED", 
+               "id" : "BEHAVIOR_COLOR_RED"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "3", 
+         "description" : "After taking off, make Dash turn on <b>green lights</b> when the <b>top button is released</b>.  Then make Dash automatically play the <b>tire squeal</b> sound.", 
+         "load_startSM" : false, 
+         "introduction" : "Green means go, and look at Dash go!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 84.85347, 
+                           "y" : 8.003136
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -65.92406, 
+                           "y" : -2.631592
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971944752837120", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923712_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 254.4521, 
+                           "y" : -0.9980698
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911867_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 86.59167, 
+                           "y" : -2.982956
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -62.30936, 
+                           "y" : 4.104347
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : 163.9617, 
+                           "y" : -122.8917
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2264, 
+                        "parameter_values" : [
+                           "2264"
+                        ], 
+                        "id" : "21912043_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911867_1", 
+                        "state_target_id" : "21912043_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21912053_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "21912053_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911912_1", 
+                        "state_target_id" : "21911867_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN_NOT", 
+                           "id" : "21912229_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN_NOT----> ( S1 )", 
+                        "id" : "21912229_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971944795903220", 
+                  "layout_position" : {
+                     "x" : -6.176758, 
+                     "y" : 13.23242
+                  }, 
+                  "id" : "22186846_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the states with a <b>Top Button Released</b> cue and an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 257.1472, 
+                           "y" : 11.95398
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911867_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 100.0225, 
+                           "y" : 15.25095
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -53.77169, 
+                           "y" : 6.691071
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : 127.0671, 
+                           "y" : -96.20216
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2264, 
+                        "parameter_values" : [
+                           "2264"
+                        ], 
+                        "id" : "21912043_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911867_1", 
+                        "state_target_id" : "21912043_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21912053_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "21912053_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911912_1", 
+                        "state_target_id" : "21911867_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN_NOT", 
+                           "id" : "21912229_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN_NOT----> ( S1 )", 
+                        "id" : "21912229_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971944844525700", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923539_29"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "type" : "COLOR_GREEN", 
+               "id" : "BEHAVIOR_COLOR_GREEN"
+            }, 
+            {
+               "type" : "SOUND_TRANSPORT", 
+               "id" : "BEHAVIOR_SOUND_TRANSPORT"
+            }, 
+            {
+               "type" : "COLOR_RED", 
+               "id" : "BEHAVIOR_COLOR_RED"
+            }, 
+            {
+               "moody_animation" : {
+                  "id" : "10016"
+               }, 
+               "type" : "MOODY_ANIMATION", 
+               "id" : "MOODY_ANIMATION_10016"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "4", 
+         "description" : "After playing the <b>tire squeal</b> sound, make Dash instantly move forward with both wheels set to <b>80 cm/s</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Let's see how fast Desert Dash can go!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -214.7462, 
+                           "y" : 6.92724
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 303.0447, 
+                           "y" : 1.215271
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911867_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 128.839, 
+                           "y" : 4.033325
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -32.92838, 
+                           "y" : 8.287239
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : 181.6482, 
+                           "y" : -113.4827
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2264, 
+                        "parameter_values" : [
+                           "2264"
+                        ], 
+                        "id" : "21912043_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911867_1", 
+                        "state_target_id" : "21912043_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21912053_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "21912053_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911912_1", 
+                        "state_target_id" : "21911867_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN_NOT", 
+                           "id" : "21912229_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN_NOT----> ( S1 )", 
+                        "id" : "21912229_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971937463913650", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21923539_29"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "MOVE_CONT_SPIN", 
+                        "id" : "BEHAVIOR_MOVE_CONT_SPIN"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -215.136, 
+                           "y" : 15.99249
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 257.5808, 
+                           "y" : -9.274441
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911867_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 98.46369, 
+                           "y" : 12.36545
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -58.62739, 
+                           "y" : 7.648018
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_MOVE_CONT_SPIN", 
+                        "layout_position" : {
+                           "x" : -23.59818, 
+                           "y" : -113.2666
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 80, 
+                        "parameter_values" : [
+                           "80", 
+                           "80"
+                        ], 
+                        "id" : "21912007_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : 150.1122, 
+                           "y" : -117.7673
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2264, 
+                        "parameter_values" : [
+                           "2264"
+                        ], 
+                        "id" : "21912043_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911867_1", 
+                        "state_target_id" : "21912043_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21912053_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "21912053_1"
+                     }, 
+                     {
+                        "state_source_id" : "21912043_1", 
+                        "state_target_id" : "21912007_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "21912064_2"
+                        }, 
+                        "comment" : "( S5 ) ----IMMEDIATE----> ( S4 )", 
+                        "id" : "21912064_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911912_1", 
+                        "state_target_id" : "21911867_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN_NOT", 
+                           "id" : "21912229_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN_NOT----> ( S1 )", 
+                        "id" : "21912229_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971945248814020", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "22186852_29"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Moving Basics</b> state.  Set both wheels to <b>80 cm/s</b> in the <b>forward</b> direction.  Link the state with an <b>Instant</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "07_Moving Basics_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }, 
+                     {
+                        "moody_animation" : {
+                           "id" : "10016"
+                        }, 
+                        "type" : "MOODY_ANIMATION", 
+                        "id" : "MOODY_ANIMATION_10016"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "MOVE_CONT_SPIN", 
+                        "id" : "BEHAVIOR_MOVE_CONT_SPIN"
+                     }, 
+                     {
+                        "type" : "SOUND_TRANSPORT", 
+                        "id" : "BEHAVIOR_SOUND_TRANSPORT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -215.136, 
+                           "y" : 15.99249
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21910827_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 269.55, 
+                           "y" : -6.571121
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911867_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "MOODY_ANIMATION_10016", 
+                        "layout_position" : {
+                           "x" : 97.50674, 
+                           "y" : 12.57477
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 1, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 10016, 
+                        "parameter_values" : [
+                           "10016"
+                        ], 
+                        "id" : "21911912_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : -58.41432, 
+                           "y" : 9.988045
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "21911944_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_MOVE_CONT_SPIN", 
+                        "layout_position" : {
+                           "x" : -35.97857, 
+                           "y" : -111.0605
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 80, 
+                        "parameter_values" : [
+                           "80", 
+                           "80"
+                        ], 
+                        "id" : "21912007_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_TRANSPORT", 
+                        "layout_position" : {
+                           "x" : 163.8906, 
+                           "y" : -110.6007
+                        }, 
+                        "activation_time" : 0, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2264, 
+                        "parameter_values" : [
+                           "2264"
+                        ], 
+                        "id" : "21912043_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "21910827_2", 
+                        "state_target_id" : "21911944_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN", 
+                           "id" : "21911945_2"
+                        }, 
+                        "comment" : "( noname ) ----BUTTON_MAIN----> ( S3 )", 
+                        "id" : "21911945_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911944_1", 
+                        "state_target_id" : "21911912_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21911976_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "21911976_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911867_1", 
+                        "state_target_id" : "21912043_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "21912053_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "21912053_1"
+                     }, 
+                     {
+                        "state_source_id" : "21912043_1", 
+                        "state_target_id" : "21912007_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "21912064_2"
+                        }, 
+                        "comment" : "( S5 ) ----IMMEDIATE----> ( S4 )", 
+                        "id" : "21912064_1"
+                     }, 
+                     {
+                        "state_source_id" : "21911912_1", 
+                        "state_target_id" : "21911867_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BUTTON_MAIN_NOT", 
+                           "id" : "21912229_2"
+                        }, 
+                        "comment" : "( S2 ) ----BUTTON_MAIN_NOT----> ( S1 )", 
+                        "id" : "21912229_1"
+                     }
+                  ], 
+                  "state_start_id" : "21910827_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130971945023890430", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "21910827_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : [
+            {
+               "type" : "MOVE_CONT_SPIN", 
+               "id" : "BEHAVIOR_MOVE_CONT_SPIN"
+            }, 
+            {
+               "type" : "COLOR_RED", 
+               "id" : "BEHAVIOR_COLOR_RED"
+            }, 
+            {
+               "moody_animation" : {
+                  "id" : "10016"
+               }, 
+               "type" : "MOODY_ANIMATION", 
+               "id" : "MOODY_ANIMATION_10016"
+            }, 
+            {
+               "type" : "COLOR_GREEN", 
+               "id" : "BEHAVIOR_COLOR_GREEN"
+            }, 
+            {
+               "type" : "SOUND_TRANSPORT", 
+               "id" : "BEHAVIOR_SOUND_TRANSPORT"
+            }
+         ]
+      }
+   ], 
+   "id" : "21910789_2"
+}

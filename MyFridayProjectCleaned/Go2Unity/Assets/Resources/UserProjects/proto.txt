@@ -1,0 +1,204 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "asset_name":"DUCK_QUACK",
+                            "enabled": true,
+                            "name": "quak",
+                            "type": "SoundCommandItem"
+                        }
+                    ],
+                    "name": "clap",
+                    "type": "ClapTrigger"
+                },
+                {
+                    "KidnapState":"KIDNAPPED",
+                    "children": [
+                        {
+                            "asset_name":"HELP_HELP",
+                            "enabled": true,
+                            "name": "help",
+                            "type": "SoundCommandItem"
+                        }
+                    ],
+                    "name": "kdnK",
+                    "type": "KidnapTrigger"
+                },
+                {
+                    "KidnapState":"FREE",
+                    "children": [
+                        {
+                            "asset_name":"DASH_OKAY1",
+                            "enabled": true,
+                            "name": "okay",
+                            "type": "SoundCommandItem"
+                        }
+                    ],
+                    "name": "kdnF",
+                    "type": "KidnapTrigger"
+                },
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"NEAR",
+                    "children": [
+                        {
+                            "LightsCommandType": "RED",
+                            "enabled": true,
+                            "name": "r",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "d RN",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"MIDDLE",
+                    "children": [
+                        {
+                            "LightsCommandType": "YELLOW",
+                            "enabled": true,
+                            "name": "y",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "d RM",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "DistanceTriggerType":"REAR",
+                    "DistanceLevel":"FAR",
+                    "children": [
+                        {
+                            "LightsCommandType": "OFF",
+                            "enabled": true,
+                            "name": "o",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "d RF",
+                    "type": "DistanceTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_MAIN",
+                    "children": [
+                        {
+                            "LightsCommandType": "OFF",
+                            "enabled": true,
+                            "name": "r",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "bm0",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_MAIN",
+                    "children": [
+                        {
+                            "LightsCommandType": "CYAN",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "bm1",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_1",
+                    "name": "b10",
+                    "type": "ButtonTrigger",
+                    "children": [
+                        {
+                            "LightsCommandType": "RED",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_1",
+                    "children": [
+                        {
+                            "LightsCommandType": "BLUE",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "b11",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_2",
+                    "name": "b20",
+                    "type": "ButtonTrigger",
+                    "children": [
+                        {
+                            "LightsCommandType": "GREEN",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_2",
+                    "children": [
+                        {
+                            "LightsCommandType": "WHITE",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "b21",
+                    "type": "ButtonTrigger"
+                },
+                {
+                    "ButtonState": "BUTTON_NOTPRESSED",
+                    "ButtonTriggerType": "BUTTON_3",
+                    "name": "b30",
+                    "type": "ButtonTrigger",
+                    "children": [
+                        {
+                            "LightsCommandType": "YELLOW",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                },
+                {
+                    "ButtonState": "BUTTON_PRESSED",
+                    "ButtonTriggerType": "BUTTON_3",
+                    "children": [
+                        {
+                            "LightsCommandType": "MAGENTA",
+                            "enabled": true,
+                            "name": "c",
+                            "type": "LightsCommandItem"
+                        }
+                    ],
+                    "name": "b31",
+                    "type": "ButtonTrigger"
+                }
+            ],
+            "name": "buttons",
+            "type": "Workbench"
+        },
+    ],
+    "name": "myProject",
+    "type": "Project"
+}

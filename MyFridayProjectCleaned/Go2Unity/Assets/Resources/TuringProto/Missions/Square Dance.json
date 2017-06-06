@@ -1,0 +1,1480 @@
+{
+   "user_facing_name" : "Square Dance", 
+   "description" : "So, you're lost in the desert, and Dash decides it's the perfect time to learn some new dance moves. If you can't stop them, join them.", 
+   "icon_name" : "Desert", 
+   "tutorial_mission" : false, 
+   "type" : 0, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "1", 
+         "description" : "Make Dash automatically <b>move forward 50 cm</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 189.4196, 
+                           "y" : 6.799332
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901788851613410", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "19851753_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Hint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 20.85179, 
+                           "y" : 0.9975662
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 193.0024, 
+                           "y" : 9.707703
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901805407651690", 
+                  "layout_position" : {
+                     "x" : -88.74512, 
+                     "y" : -6.784058
+                  }, 
+                  "id" : "19852091_6"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Make sure the <b>Move To</b> state is set to <b>50 cm</b> in the <b>forward</b> direction.  Link the state with an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "04_Move To_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 20.85179, 
+                           "y" : 0.9975662
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 194.9463, 
+                           "y" : -1.272583
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901789997488480", 
+                  "layout_position" : {
+                     "x" : -83.31909, 
+                     "y" : 1.324463
+                  }, 
+                  "id" : "22472810_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "type" : "MOVE_DISC_STRAIGHT", 
+               "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "2", 
+         "description" : "After moving forward, make Dash automatically <b>spin to 90 degrees</b>.", 
+         "load_startSM" : true, 
+         "introduction" : "Straight as an arrow!  \nNow let's turn it up!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 165.1409, 
+                           "y" : 1.448353
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 330.1313, 
+                           "y" : -0.5270844
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : -90.4875, 
+                        "parameter_values" : [
+                           "-90.4875"
+                        ], 
+                        "id" : "19852314_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901805587283580", 
+                  "layout_position" : {
+                     "x" : -167.6575, 
+                     "y" : -5.123901
+                  }, 
+                  "id" : "19852213_9"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Hint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 176.6988, 
+                           "y" : -0.1286621
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 355.98, 
+                           "y" : 0.9177628
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : -90.1512, 
+                        "parameter_values" : [
+                           "-90.1512"
+                        ], 
+                        "id" : "19852314_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901806113194230", 
+                  "layout_position" : {
+                     "x" : -169.046, 
+                     "y" : -1.052856
+                  }, 
+                  "id" : "22472804_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Make sure the <b>Spin To</b> state is set to <b>90 degrees</b>.  Link the state with an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "08_Spin To_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 176.6988, 
+                           "y" : -0.1286621
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 348.1188, 
+                           "y" : 3.962334
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : -89.61826, 
+                        "parameter_values" : [
+                           "-89.61826"
+                        ], 
+                        "id" : "19852314_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901809992003170", 
+                  "layout_position" : {
+                     "x" : -166.3666, 
+                     "y" : 3.765869
+                  }, 
+                  "id" : "19852370_11"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "type" : "MOVE_DISC_STRAIGHT", 
+               "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+            }, 
+            {
+               "type" : "MOVE_DISC_TURN", 
+               "id" : "BEHAVIOR_MOVE_DISC_TURN"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "3", 
+         "description" : "After spinning right, make Dash automatically play a silly sound.", 
+         "load_startSM" : true, 
+         "introduction" : "This is headed in a great direction!  \nNow let's add some sound when Dash turns around!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 194.9025, 
+                           "y" : -7.908451
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 391.7042, 
+                           "y" : -7.53307
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : -89.77048, 
+                        "parameter_values" : [
+                           "-89.77048"
+                        ], 
+                        "id" : "19852314_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901807393753760", 
+                  "layout_position" : {
+                     "x" : -181.9092, 
+                     "y" : 5.023193
+                  }, 
+                  "id" : "20026282_17"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Hint 1", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_SILLY", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 194.9025, 
+                           "y" : -7.908451
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 391.7042, 
+                           "y" : -7.53307
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : -90.16393, 
+                        "parameter_values" : [
+                           "-90.16393"
+                        ], 
+                        "id" : "19852314_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_SILLY", 
+                        "layout_position" : {
+                           "x" : 575.101, 
+                           "y" : -4.022148
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2214, 
+                        "parameter_values" : [
+                           "2214"
+                        ], 
+                        "id" : "20026584_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852314_1", 
+                        "state_target_id" : "20026584_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20026706_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "20026706_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901807477958850", 
+                  "layout_position" : {
+                     "x" : -275.0947, 
+                     "y" : 13.05847
+                  }, 
+                  "id" : "20026621_16"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the state with an <b>Auto</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_SILLY", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 194.9025, 
+                           "y" : -7.908451
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 391.7042, 
+                           "y" : -7.53307
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : -90.16393, 
+                        "parameter_values" : [
+                           "-90.16393"
+                        ], 
+                        "id" : "19852314_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_SILLY", 
+                        "layout_position" : {
+                           "x" : 575.101, 
+                           "y" : -4.022148
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2214, 
+                        "parameter_values" : [
+                           "2214"
+                        ], 
+                        "id" : "20026584_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852314_1", 
+                        "state_target_id" : "20026584_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20026706_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "20026706_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901807883432510", 
+                  "layout_position" : {
+                     "x" : -277.063, 
+                     "y" : 2.474976
+                  }, 
+                  "id" : "25661986_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : [
+            {
+               "type" : "SOUND_VOCAL_SILLY", 
+               "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+            }, 
+            {
+               "type" : "MOVE_DISC_STRAIGHT", 
+               "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+            }, 
+            {
+               "type" : "MOVE_DISC_TURN", 
+               "id" : "BEHAVIOR_MOVE_DISC_TURN"
+            }
+         ]
+      }, 
+      {
+         "user_facing_name" : "4", 
+         "description" : "After the silly sound, make Dash automatically <b>move forward 50 cm</b> again.", 
+         "load_startSM" : false, 
+         "introduction" : "That's a turn for the better!  \nLet's add a link to make Dash move forever!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_SILLY", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 194.9025, 
+                           "y" : -7.908451
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 379.0148, 
+                           "y" : 79.39861
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : -89.69434, 
+                        "parameter_values" : [
+                           "-89.69434"
+                        ], 
+                        "id" : "19852314_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_SILLY", 
+                        "layout_position" : {
+                           "x" : 562.1816, 
+                           "y" : -3.466225
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2214, 
+                        "parameter_values" : [
+                           "2214"
+                        ], 
+                        "id" : "20026584_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852314_1", 
+                        "state_target_id" : "20026584_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20026706_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "20026706_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901808045362060", 
+                  "layout_position" : {
+                     "x" : 0, 
+                     "y" : 0
+                  }, 
+                  "id" : "20492816_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Add Link", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_SILLY", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 175.2489, 
+                           "y" : -0.02038956
+                        }, 
+                        "activation_time" : 4, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 296.5385, 
+                           "y" : 70.73091
+                        }, 
+                        "activation_time" : 3, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : -89.92278, 
+                        "parameter_values" : [
+                           "-89.92278"
+                        ], 
+                        "id" : "19852314_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_SILLY", 
+                        "layout_position" : {
+                           "x" : 450.0118, 
+                           "y" : 0.8443146
+                        }, 
+                        "activation_time" : 3, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2214, 
+                        "parameter_values" : [
+                           "2214"
+                        ], 
+                        "id" : "20026584_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852314_1", 
+                        "state_target_id" : "20026584_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20026706_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "20026706_1"
+                     }, 
+                     {
+                        "state_source_id" : "20026584_1", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20492950_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "20492950_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901808273748020", 
+                  "layout_position" : {
+                     "x" : -268.8936, 
+                     "y" : -4.25415
+                  }, 
+                  "id" : "20492935_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Make a loop!  Link the states with an <b>Auto</b> cue.  Run the program and wait until Dash makes a square!", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_STRAIGHT", 
+                        "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+                     }, 
+                     {
+                        "type" : "MOVE_DISC_TURN", 
+                        "id" : "BEHAVIOR_MOVE_DISC_TURN"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_SILLY", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "19851753_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_STRAIGHT", 
+                        "layout_position" : {
+                           "x" : 175.2489, 
+                           "y" : -0.02038574
+                        }, 
+                        "activation_time" : 4, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 50.39108, 
+                        "parameter_values" : [
+                           "50.39108"
+                        ], 
+                        "id" : "19852019_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_MOVE_DISC_TURN", 
+                        "layout_position" : {
+                           "x" : 296.5386, 
+                           "y" : 70.7309
+                        }, 
+                        "activation_time" : 4, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : -89.92278, 
+                        "parameter_values" : [
+                           "-89.92278"
+                        ], 
+                        "id" : "19852314_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_SILLY", 
+                        "layout_position" : {
+                           "x" : 450.0118, 
+                           "y" : 0.8443146
+                        }, 
+                        "activation_time" : 4, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2214, 
+                        "parameter_values" : [
+                           "2214"
+                        ], 
+                        "id" : "20026584_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "19851753_2", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852099_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "19852099_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852019_1", 
+                        "state_target_id" : "19852314_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "19852404_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "19852404_1"
+                     }, 
+                     {
+                        "state_source_id" : "19852314_1", 
+                        "state_target_id" : "20026584_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20026706_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "20026706_1"
+                     }, 
+                     {
+                        "state_source_id" : "20026584_1", 
+                        "state_target_id" : "19852019_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "20492950_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "20492950_1"
+                     }
+                  ], 
+                  "state_start_id" : "19851753_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "MyProgram", 
+                  "version" : 3, 
+                  "robot_type" : 1001, 
+                  "loaded_time" : "130901811849890230", 
+                  "layout_position" : {
+                     "x" : -255.4382, 
+                     "y" : 2.139282
+                  }, 
+                  "id" : "25662061_22"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : [
+            {
+               "type" : "SOUND_VOCAL_SILLY", 
+               "id" : "BEHAVIOR_SOUND_VOCAL_SILLY"
+            }, 
+            {
+               "type" : "MOVE_DISC_STRAIGHT", 
+               "id" : "BEHAVIOR_MOVE_DISC_STRAIGHT"
+            }, 
+            {
+               "type" : "MOVE_DISC_TURN", 
+               "id" : "BEHAVIOR_MOVE_DISC_TURN"
+            }
+         ]
+      }
+   ], 
+   "id" : "19851632_2"
+}

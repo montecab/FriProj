@@ -1,0 +1,1055 @@
+{
+   "user_facing_name" : "Go Time", 
+   "description" : "Dot knows that it's important to say the right thing at the right time.  \nLet's help Dot use timers to match sounds with lights!", 
+   "icon_name" : "ui_eli_0", 
+   "tutorial_mission" : true, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Add Sound", 
+         "description" : "Make Dot automatically say \"<b>Ready Set Go!</b>\"  Then make Dot automatically turn on <b>red lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -63.29443, 
+                           "y" : -46.02527
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993050349830", 
+                  "layout_position" : {
+                     "x" : -205.2432, 
+                     "y" : 29.08716
+                  }, 
+                  "id" : "37483235_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 198.0934, 
+                           "y" : 4.276131
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39138094_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39138094_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "39138096_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "39138096_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -62.83337, 
+                     "y" : -21.74744
+                  }, 
+                  "id" : "37483860_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Red</b> light and a brave sound.  Set the sound to \"<b>Ready Set Go!</b>\".  Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 230.1304, 
+                           "y" : 3.59387
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39139421_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 61.35291, 
+                           "y" : 5.244875
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "39139409_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "39139409_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "39139426_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "39139426_1"
+                     }, 
+                     {
+                        "state_source_id" : "39139409_1", 
+                        "state_target_id" : "39139421_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "39139429_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "39139429_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -60.17188, 
+                     "y" : -29.75049
+                  }, 
+                  "id" : "39138457_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add Instant", 
+         "description" : "After the sound, make Dot <b>instantly</b> turn on <b>red lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Hmmm.  The lights don't turn on until the sound has finished.  Let's see if we can make the lights play at the same time as the sound.", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_1", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "39137396_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "39137396_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -195.4723, 
+                     "y" : -22.32837
+                  }, 
+                  "id" : "39137587_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "39138578_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "39138578_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -56.38232, 
+                     "y" : -19.4353
+                  }, 
+                  "id" : "39138510_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Tap the <b>Auto</b> cue between the sound and the <b>Red</b> light.  Change the cue to be an <b>Instant</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "39138578_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "39138578_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -56.38232, 
+                     "y" : -19.4353
+                  }, 
+                  "id" : "39138599_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add Timers", 
+         "description" : "After turning on red lights, make Dot <b>wait for 1.0 s</b> then turn on <b>yellow lights</b>.  After turning on yellow lights, make Dot <b>wait for 1.0 s</b> then turn on <b>green lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Much better!  \nLet's add more lights and Dot will be ready to go!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "39138578_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "39138578_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -198.2524, 
+                     "y" : -16.49377
+                  }, 
+                  "id" : "39138607_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 343.6382, 
+                           "y" : 3.410522
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39138767_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 490.1653, 
+                           "y" : 4.512215
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39138770_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "39138578_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "39138578_1"
+                     }, 
+                     {
+                        "state_source_id" : "39137336_1", 
+                        "state_target_id" : "39138767_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "39138771_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S3 )", 
+                        "id" : "39138771_1"
+                     }, 
+                     {
+                        "state_source_id" : "39138767_1", 
+                        "state_target_id" : "39138770_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "39138792_2"
+                        }, 
+                        "comment" : "( S3 ) ----TIME----> ( S4 )", 
+                        "id" : "39138792_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -198.2524, 
+                     "y" : -18.30615
+                  }, 
+                  "id" : "39138761_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Link the states with <b>Wait For</b> cues set to <b>1.0 s</b>.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_BRAVE", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_BRAVE"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -98.1438, 
+                           "y" : 4.100594
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37483235_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_BRAVE", 
+                        "layout_position" : {
+                           "x" : 49.543, 
+                           "y" : 4.881836
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2037, 
+                        "parameter_values" : [
+                           "2037"
+                        ], 
+                        "id" : "37483290_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 196.241, 
+                           "y" : 3.668823
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39137336_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 343.6382, 
+                           "y" : 3.410522
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39138767_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 490.1653, 
+                           "y" : 4.512215
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "39138770_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37483235_2", 
+                        "state_target_id" : "37483290_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37483302_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37483302_1"
+                     }, 
+                     {
+                        "state_source_id" : "37483290_1", 
+                        "state_target_id" : "39137336_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "IMMEDIATE", 
+                           "id" : "39138578_2"
+                        }, 
+                        "comment" : "( S4 ) ----IMMEDIATE----> ( S2 )", 
+                        "id" : "39138578_1"
+                     }, 
+                     {
+                        "state_source_id" : "39137336_1", 
+                        "state_target_id" : "39138767_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "39138771_2"
+                        }, 
+                        "comment" : "( S2 ) ----TIME----> ( S3 )", 
+                        "id" : "39138771_1"
+                     }, 
+                     {
+                        "state_source_id" : "39138767_1", 
+                        "state_target_id" : "39138770_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "parameter_value" : 1, 
+                           "type" : "TIME", 
+                           "id" : "39138792_2"
+                        }, 
+                        "comment" : "( S3 ) ----TIME----> ( S4 )", 
+                        "id" : "39138792_1"
+                     }
+                  ], 
+                  "state_start_id" : "37483235_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Loud Pig", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019993103082550", 
+                  "layout_position" : {
+                     "x" : -198.2524, 
+                     "y" : -18.30615
+                  }, 
+                  "id" : "39139540_24"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 30, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "37483084_2"
+}

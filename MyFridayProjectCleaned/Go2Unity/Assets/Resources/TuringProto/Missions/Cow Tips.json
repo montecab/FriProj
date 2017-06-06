@@ -1,0 +1,1596 @@
+{
+   "user_facing_name" : "Cow Tips", 
+   "description" : "It's nighttime at the ranch in Dry Gulch Desert, and the cows are falling asleep. Dot thinks that the sleeping cows would be more comfortable on their side. Help Dot share this \"tip\" with the cows.", 
+   "icon_name" : "Desert", 
+   "tutorial_mission" : false, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Cow Costume", 
+         "description" : "Make Dot automatically turn on <b>white lights</b>.  Then make Dot automatically show a pattern in the <b>eye ring</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Dot needs a costume to sneak up on the sleeping cows.  \nLet's make Dot white with spots!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -188.5499, 
+                     "y" : -47.7915
+                  }, 
+                  "id" : "38111920_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : true, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38112213_4"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>White</b> light and an <b>Eye Ring</b>.  Create a pattern in the eye ring to give Dot spots.  Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "02_Creating Deleting States_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : true, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38113241_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Lean Left", 
+         "description" : "After the eye ring, make Dot play the <b>cow</b> sound when tilted to <b>lean left</b>.  Then make Dot return to <b>Start</b> when tilted <b>upright</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : true, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38113255_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 494.7444, 
+                           "y" : -84.54913
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38113931_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38113931_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38113363_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out an <b>Animals</b> sound.  Set the sound to <b>Cow</b>.  Link the <b>Eye Ring</b> to the sound using a <b>Lean Left</b> cue.  Link the sound to <b>Start</b> using an <b>Upright</b> cue.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "02_Creating Deleting States_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 2, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 494.7444, 
+                           "y" : -84.54913
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38113931_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38113931_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38114002_22"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Add More Directions", 
+         "description" : "After the eye ring, make Dot play the <b>cow</b> sound when Dot is tilted <b>face up</b>, or <b>face down</b>, or when tilted to <b>lean right</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "Hmmm.  The cow didn't seem too happy.  \nDot thinks we should try tipping them on different sides.", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_1", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 494.7444, 
+                           "y" : -84.54913
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38114013_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38114013_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -296.5144, 
+                     "y" : -0.741394
+                  }, 
+                  "id" : "38113484_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 562.5229, 
+                           "y" : -81.91367
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38113767_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "38113767_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "38113759_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_RIGHT----> ( S3 )", 
+                        "id" : "38113759_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "38113774_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "38113774_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38114025_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38114025_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -299.7861, 
+                     "y" : -1.318176
+                  }, 
+                  "id" : "38113741_19"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Add more links between the <b>Eye Ring</b> and the <b>Cow</b> sound.  Use the <b>Lean Right</b>, <b>Face Up</b> and <b>Face Down</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 2, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 562.5229, 
+                           "y" : -81.91367
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38113767_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "38113767_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "38113759_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_RIGHT----> ( S3 )", 
+                        "id" : "38113759_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "38113774_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "38113774_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38114025_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38114025_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -299.7861, 
+                     "y" : -1.318176
+                  }, 
+                  "id" : "38114038_31"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Play", 
+         "description" : "<b>PLAY WITH DOT:</b>  \nHelp Dot give the cows a good night's sleep.  Roll Dot on the floor until Dot tips <b>three</b> cows.", 
+         "load_startSM" : false, 
+         "introduction" : "Hehe.  Looks like Dot isn't giving up until those cows get a good night's sleep!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_2", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 562.5229, 
+                           "y" : -81.91367
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38113767_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "38113767_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "38113759_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_RIGHT----> ( S3 )", 
+                        "id" : "38113759_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "38113774_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "38113774_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38114025_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38114025_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -299.7861, 
+                     "y" : -1.318176
+                  }, 
+                  "id" : "38114050_31"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "COLOR_WHITE", 
+                        "id" : "BEHAVIOR_COLOR_WHITE"
+                     }, 
+                     {
+                        "type" : "EYERING", 
+                        "id" : "BEHAVIOR_EYERING"
+                     }, 
+                     {
+                        "type" : "SOUND_ANIMAL", 
+                        "id" : "BEHAVIOR_SOUND_ANIMAL"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 25.80701, 
+                           "y" : -81.88318
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38111920_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+                        "layout_position" : {
+                           "x" : 124.9096, 
+                           "y" : 39.53905
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38112761_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_EYERING", 
+                        "layout_position" : {
+                           "x" : 287.3683, 
+                           "y" : 46.94996
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : false, 
+                        "obscured" : false, 
+                        "parameter_value" : 2509, 
+                        "parameter_values" : [
+                           "2509"
+                        ], 
+                        "id" : "38112770_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_ANIMAL", 
+                        "layout_position" : {
+                           "x" : 562.5229, 
+                           "y" : -81.91367
+                        }, 
+                        "activation_time" : 3, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2001, 
+                        "parameter_values" : [
+                           "2001"
+                        ], 
+                        "id" : "38113375_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "38112761_1", 
+                        "state_target_id" : "38112770_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112780_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38112780_1"
+                     }, 
+                     {
+                        "state_source_id" : "38111920_2", 
+                        "state_target_id" : "38112761_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38112762_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38112762_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_LEFT", 
+                           "id" : "38113448_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_LEFT----> ( S3 )", 
+                        "id" : "38113448_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_BACKWARD", 
+                           "id" : "38113767_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_BACKWARD----> ( S3 )", 
+                        "id" : "38113767_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_RIGHT", 
+                           "id" : "38113759_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_RIGHT----> ( S3 )", 
+                        "id" : "38113759_1"
+                     }, 
+                     {
+                        "state_source_id" : "38112770_1", 
+                        "state_target_id" : "38113375_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "LEAN_FORWARD", 
+                           "id" : "38113774_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_FORWARD----> ( S3 )", 
+                        "id" : "38113774_1"
+                     }, 
+                     {
+                        "state_source_id" : "38113375_1", 
+                        "state_target_id" : "38111920_2", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "LEAN_UPSIDE_UP", 
+                           "id" : "38114025_2"
+                        }, 
+                        "comment" : "( S3 ) ----LEAN_UPSIDE_UP----> ( noname )", 
+                        "id" : "38114025_1"
+                     }
+                  ], 
+                  "state_start_id" : "38111920_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Soft Xylophone", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131026307210025960", 
+                  "layout_position" : {
+                     "x" : -299.7861, 
+                     "y" : -1.318176
+                  }, 
+                  "id" : "38114213_31"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "21370036_2"
+}

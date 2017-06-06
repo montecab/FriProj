@@ -1,0 +1,168 @@
+{ 
+   "functions" : [ 
+   ], 
+   "behaviors" : [ 
+      { 
+         "type" : "START_STATE", 
+         "id" : "BEHAVIOR_START_STATE"
+      }, 
+      { 
+         "type" : "OMNI", 
+         "id" : "BEHAVIOR_OMNI"
+      }, 
+      { 
+         "type" : "COLOR_RED", 
+         "id" : "BEHAVIOR_COLOR_RED"
+      }, 
+      { 
+         "type" : "COLOR_ORANGE", 
+         "id" : "BEHAVIOR_COLOR_ORANGE"
+      }, 
+      { 
+         "type" : "COLOR_WHITE", 
+         "id" : "BEHAVIOR_COLOR_WHITE"
+      }, 
+      { 
+         "type" : "COLOR_BLUE", 
+         "id" : "BEHAVIOR_COLOR_BLUE"
+      }
+   ], 
+   "states" : [ 
+      { 
+         "user_facing_name" : "noname", 
+         "behavior_id" : "BEHAVIOR_START_STATE", 
+         "layout_position" : { 
+            "x" : -135.001, 
+            "y" : -113.5841
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200209_2"
+      }, 
+      { 
+         "user_facing_name" : "S1", 
+         "behavior_id" : "BEHAVIOR_OMNI", 
+         "layout_position" : { 
+            "x" : 135.0003, 
+            "y" : -112.7225
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200215_1"
+      }, 
+      { 
+         "user_facing_name" : "S2", 
+         "behavior_id" : "BEHAVIOR_COLOR_RED", 
+         "layout_position" : { 
+            "x" : 206.9748, 
+            "y" : 65.29158
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200219_1"
+      }, 
+      { 
+         "user_facing_name" : "S3", 
+         "behavior_id" : "BEHAVIOR_COLOR_ORANGE", 
+         "layout_position" : { 
+            "x" : 67.99916, 
+            "y" : 65.32515
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200924_1"
+      }, 
+      { 
+         "user_facing_name" : "S4", 
+         "behavior_id" : "BEHAVIOR_COLOR_WHITE", 
+         "layout_position" : { 
+            "x" : -207.0948, 
+            "y" : 65.98711
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200990_1"
+      }, 
+      { 
+         "user_facing_name" : "S5", 
+         "behavior_id" : "BEHAVIOR_COLOR_BLUE", 
+         "layout_position" : { 
+            "x" : -67.88233, 
+            "y" : 66.36688
+         }, 
+         "activation_time" : 1, 
+         "mood" : 0, 
+         "check_state_para" : true, 
+         "obscured" : false, 
+         "id" : "39200994_1"
+      }
+   ], 
+   "transitions" : [ 
+      { 
+         "state_source_id" : "39200215_1", 
+         "state_target_id" : "39200219_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "BUTTON_MAIN_NOT", 
+            "id" : "39200220_2"
+         }, 
+         "comment" : "( S1 ) ----BUTTON_MAIN_NOT----> ( S2 )", 
+         "id" : "39200220_1"
+      }, 
+      { 
+         "state_source_id" : "39200215_1", 
+         "state_target_id" : "39200924_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "BUTTON_MAIN", 
+            "id" : "39200926_2"
+         }, 
+         "comment" : "( S1 ) ----BUTTON_MAIN----> ( S3 )", 
+         "id" : "39200926_1"
+      }, 
+      { 
+         "state_source_id" : "39200209_2", 
+         "state_target_id" : "39200994_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "BUTTON_1_NOT", 
+            "id" : "39200996_2"
+         }, 
+         "comment" : "( noname ) ----BUTTON_1_NOT----> ( S5 )", 
+         "id" : "39200996_1"
+      }, 
+      { 
+         "state_source_id" : "39200209_2", 
+         "state_target_id" : "39200990_1", 
+         "obscured" : false, 
+         "trigger" : { 
+            "type" : "BUTTON_1", 
+            "id" : "39200998_2"
+         }, 
+         "comment" : "( noname ) ----BUTTON_1----> ( S4 )", 
+         "id" : "39200998_1"
+      }
+   ], 
+   "state_start_id" : "39200209_2", 
+   "state_omni_id" : "39200215_1", 
+   "parent_token" : "", 
+   "user_facing_name" : "Edge Triggers", 
+   "version" : 3, 
+   "robot_type" : 1001, 
+   "loaded_time" : "131037303792639600", 
+   "layout_position" : { 
+      "x" : 0, 
+      "y" : 0
+   }, 
+   "id" : "39200209_1"
+}

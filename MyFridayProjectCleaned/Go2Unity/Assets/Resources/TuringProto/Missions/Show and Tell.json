@@ -1,0 +1,2146 @@
+{
+   "user_facing_name" : "Show and Tell", 
+   "description" : "Dot likes to talk and can say many things.  \nLet's help Dot say the names of colored lights!", 
+   "icon_name" : "ui_eli_0", 
+   "tutorial_mission" : true, 
+   "type" : 1, 
+   "video_start" : "", 
+   "video_end" : "", 
+   "introoutro" : false, 
+   "puzzles" : [
+      {
+         "user_facing_name" : "Red", 
+         "description" : "Make Dot automatically say \"<b>Red</b>\" then automatically turn on <b>red lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019313899249880", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416094_1"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 158.3969, 
+                           "y" : 79.30438
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 157.4417, 
+                           "y" : -69.79533
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "37416239_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019963652439230", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416199_4"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Red</b> light and a curious sound.  Set the sound to \"<b>Red</b>\".  Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 145.9244, 
+                           "y" : 113.2087
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "38871463_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 140.9775, 
+                           "y" : -36.21447
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38871472_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "38871463_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871473_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38871473_1"
+                     }, 
+                     {
+                        "state_source_id" : "38871463_1", 
+                        "state_target_id" : "38871472_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871476_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38871476_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019314012363400", 
+                  "layout_position" : {
+                     "x" : -251.8174, 
+                     "y" : -44.42871
+                  }, 
+                  "id" : "37416558_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Yellow", 
+         "description" : "After turning on <b>red lights</b>, make Dot automatically say \"<b>Yellow</b>\" then automatically turn on <b>yellow lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 158.3969, 
+                           "y" : 79.30438
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 157.4417, 
+                           "y" : -69.79533
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "37416239_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019318785841340", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416567_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "37416739_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416699_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37416699_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416740_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37416740_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019963828073010", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416684_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Yellow</b> light and a curious sound.  Set the sound to \"<b>Yellow</b>\".  Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 121.9977, 
+                           "y" : -36.08327
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38871695_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 308.6005, 
+                           "y" : 113.1325
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "38871701_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 296.4179, 
+                           "y" : -38.48496
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "38871711_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.0199, 
+                           "y" : 111.2251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "38871686_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "38871686_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871714_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "38871714_1"
+                     }, 
+                     {
+                        "state_source_id" : "38871695_1", 
+                        "state_target_id" : "38871701_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871720_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "38871720_1"
+                     }, 
+                     {
+                        "state_source_id" : "38871701_1", 
+                        "state_target_id" : "38871711_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871723_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "38871723_1"
+                     }, 
+                     {
+                        "state_source_id" : "38871686_1", 
+                        "state_target_id" : "38871695_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "38871717_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "38871717_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019318861367580", 
+                  "layout_position" : {
+                     "x" : -246.7566, 
+                     "y" : -41.06616
+                  }, 
+                  "id" : "37416857_23"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Green", 
+         "description" : "After turning on <b>yellow lights</b>, make Dot automatically say \"<b>Green</b>\" then automatically turn on <b>green lights</b>.", 
+         "load_startSM" : false, 
+         "introduction" : "", 
+         "show_introduction" : false, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416699_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37416699_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416740_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37416740_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019321309122750", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416875_23"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "NewHint", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416699_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37416699_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416740_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37416740_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416739_1", 
+                        "state_target_id" : "37416951_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416968_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "37416968_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416951_1", 
+                        "state_target_id" : "37416964_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416971_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "37416971_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019964029511050", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37416943_23"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag out a <b>Green</b> light and a curious sound.  Set the sound to \"<b>Green</b>\".  Link the states with <b>Auto</b> cues.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : true, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416699_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37416699_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416740_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37416740_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416739_1", 
+                        "state_target_id" : "37416951_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416968_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "37416968_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416951_1", 
+                        "state_target_id" : "37416964_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416971_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "37416971_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019321460167100", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37417006_32"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 0, 
+         "behaviors" : []
+      }, 
+      {
+         "user_facing_name" : "Change Cues", 
+         "description" : "Make Dot turn on each light <b>before</b> saying the matching color.", 
+         "load_startSM" : false, 
+         "introduction" : "<b>Auto</b> cues wait for the sounds to finish before turning on the lights. \nLet's see what happens when we turn on the lights first!", 
+         "show_introduction" : true, 
+         "transfer_robot_tut" : false, 
+         "icon_name" : "ui_eli_0", 
+         "center_program" : false, 
+         "hints" : [
+            {
+               "user_facing_name" : "Start", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416244_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37416244_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416248_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37416248_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416699_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37416699_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416740_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37416740_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416739_1", 
+                        "state_target_id" : "37416951_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416968_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "37416968_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416951_1", 
+                        "state_target_id" : "37416964_1", 
+                        "obscured" : false, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37416971_2"
+                        }, 
+                        "comment" : "( S5 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "37416971_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019945927259640", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37417066_32"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }, 
+            {
+               "user_facing_name" : "Trash Links", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : 0, 
+                           "y" : 0
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 126.6575, 
+                           "y" : 84.13696
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019946072464820", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37479398_32"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Drag all of the links to the trash.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "02_Creating Deleting States_4-3_Master.mp4"
+            }, 
+            {
+               "user_facing_name" : "Add New Links", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -35.71776, 
+                           "y" : -0.5279541
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 131.134, 
+                           "y" : 79.59898
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479566_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37479566_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479568_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37479568_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479572_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37479572_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416739_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479576_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37479576_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416964_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479580_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "37479580_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416964_1", 
+                        "state_target_id" : "37416951_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479582_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "37479582_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019964589881670", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37479431_14"
+               }, 
+               "iq_points" : 0, 
+               "description" : "Add new links with <b>Auto</b> cues to turn on each light <b>before</b> playing the matching sound.  Do <b>Red</b> then <b>Yellow</b> then <b>Green</b>.", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : "01_Video Cues_4-3_Master_1.mp4"
+            }, 
+            {
+               "user_facing_name" : "Finish", 
+               "program" : {
+                  "functions" : [], 
+                  "behaviors" : [
+                     {
+                        "type" : "START_STATE", 
+                        "id" : "BEHAVIOR_START_STATE"
+                     }, 
+                     {
+                        "type" : "SOUND_VOCAL_CURIOUS", 
+                        "id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS"
+                     }, 
+                     {
+                        "type" : "COLOR_RED", 
+                        "id" : "BEHAVIOR_COLOR_RED"
+                     }, 
+                     {
+                        "type" : "COLOR_YELLOW", 
+                        "id" : "BEHAVIOR_COLOR_YELLOW"
+                     }, 
+                     {
+                        "type" : "COLOR_GREEN", 
+                        "id" : "BEHAVIOR_COLOR_GREEN"
+                     }
+                  ], 
+                  "states" : [
+                     {
+                        "user_facing_name" : "noname", 
+                        "behavior_id" : "BEHAVIOR_START_STATE", 
+                        "layout_position" : {
+                           "x" : -35.71776, 
+                           "y" : -0.5279541
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416094_2"
+                     }, 
+                     {
+                        "user_facing_name" : "S1", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 131.134, 
+                           "y" : 79.59898
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2114, 
+                        "parameter_values" : [
+                           "2114"
+                        ], 
+                        "id" : "37416208_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S2", 
+                        "behavior_id" : "BEHAVIOR_COLOR_RED", 
+                        "layout_position" : {
+                           "x" : 147.8149, 
+                           "y" : -70.55055
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416239_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S3", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 279.1229, 
+                           "y" : 83.93251
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2115, 
+                        "parameter_values" : [
+                           "2115"
+                        ], 
+                        "id" : "37416692_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S4", 
+                        "behavior_id" : "BEHAVIOR_COLOR_YELLOW", 
+                        "layout_position" : {
+                           "x" : 294.8002, 
+                           "y" : -69.82726
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416739_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S5", 
+                        "behavior_id" : "BEHAVIOR_SOUND_VOCAL_CURIOUS", 
+                        "layout_position" : {
+                           "x" : 420.2103, 
+                           "y" : 84.51025
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "parameter_value" : 2111, 
+                        "parameter_values" : [
+                           "2111"
+                        ], 
+                        "id" : "37416951_1"
+                     }, 
+                     {
+                        "user_facing_name" : "S6", 
+                        "behavior_id" : "BEHAVIOR_COLOR_GREEN", 
+                        "layout_position" : {
+                           "x" : 419.6885, 
+                           "y" : -69.54246
+                        }, 
+                        "activation_time" : 1, 
+                        "mood" : 0, 
+                        "check_state_para" : true, 
+                        "obscured" : false, 
+                        "id" : "37416964_1"
+                     }
+                  ], 
+                  "transitions" : [
+                     {
+                        "state_source_id" : "37416094_2", 
+                        "state_target_id" : "37416239_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479566_2"
+                        }, 
+                        "comment" : "( noname ) ----BEHAVIOR_FINISHED----> ( S2 )", 
+                        "id" : "37479566_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416239_1", 
+                        "state_target_id" : "37416208_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479568_2"
+                        }, 
+                        "comment" : "( S2 ) ----BEHAVIOR_FINISHED----> ( S1 )", 
+                        "id" : "37479568_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416208_1", 
+                        "state_target_id" : "37416739_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479572_2"
+                        }, 
+                        "comment" : "( S1 ) ----BEHAVIOR_FINISHED----> ( S4 )", 
+                        "id" : "37479572_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416739_1", 
+                        "state_target_id" : "37416692_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479576_2"
+                        }, 
+                        "comment" : "( S4 ) ----BEHAVIOR_FINISHED----> ( S3 )", 
+                        "id" : "37479576_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416692_1", 
+                        "state_target_id" : "37416964_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479580_2"
+                        }, 
+                        "comment" : "( S3 ) ----BEHAVIOR_FINISHED----> ( S6 )", 
+                        "id" : "37479580_1"
+                     }, 
+                     {
+                        "state_source_id" : "37416964_1", 
+                        "state_target_id" : "37416951_1", 
+                        "obscured" : true, 
+                        "trigger" : {
+                           "type" : "BEHAVIOR_FINISHED", 
+                           "id" : "37479582_2"
+                        }, 
+                        "comment" : "( S6 ) ----BEHAVIOR_FINISHED----> ( S5 )", 
+                        "id" : "37479582_1"
+                     }
+                  ], 
+                  "state_start_id" : "37416094_2", 
+                  "parent_token" : "", 
+                  "user_facing_name" : "Stingy Sloth", 
+                  "version" : 3, 
+                  "robot_type" : 1002, 
+                  "loaded_time" : "131019946397012930", 
+                  "layout_position" : {
+                     "x" : -212.7899, 
+                     "y" : -10.62012
+                  }, 
+                  "id" : "37479630_32"
+               }, 
+               "iq_points" : 0, 
+               "description" : "", 
+               "check_state_para" : false, 
+               "check_trigger_para" : false, 
+               "file_name" : ""
+            }
+         ], 
+         "iq_points" : 40, 
+         "behaviors" : []
+      }
+   ], 
+   "id" : "37415937_2"
+}

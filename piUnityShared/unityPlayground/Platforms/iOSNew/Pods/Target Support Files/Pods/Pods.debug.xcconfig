@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/DCIntrospect-ARC" "${PODS_ROOT}/Headers/Public/FlurrySDK" "${PODS_ROOT}/Headers/Public/UrbanAirship-iOS-SDK"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/FlurrySDK/Flurry"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/DCIntrospect-ARC" -isystem "${PODS_ROOT}/Headers/Public/FlurrySDK" -isystem "${PODS_ROOT}/Headers/Public/UrbanAirship-iOS-SDK" $(inherited) -D_UA_VERSION=\"5.0.3\"
+OTHER_LDFLAGS = -ObjC -l"Flurry_5.3.0" -l"Pods-AFNetworking" -l"Pods-DCIntrospect-ARC" -l"Pods-FlurrySDK" -l"Pods-UrbanAirship-iOS-SDK" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport" -weak_framework "StoreKit"
+PODS_ROOT = ${SRCROOT}/Pods
